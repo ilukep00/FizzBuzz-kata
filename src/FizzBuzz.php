@@ -17,7 +17,4 @@ class FizzBuzz
         }
         return strval($numberToConvert);
     }
-
-
-
 }
