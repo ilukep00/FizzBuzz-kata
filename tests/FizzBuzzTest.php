@@ -9,7 +9,7 @@ class FizzBuzzTest extends TestCase
     /**
      * @test
      */
-    public function convert_buzz_for_mod3()
+    public function returns_fizz_for_multiple_of_3()
     {
         $fizzBuzz = new FizzBuzz();
 
@@ -20,7 +20,7 @@ class FizzBuzzTest extends TestCase
     /**
      * @test
      */
-    public function convert_buzz_for_mod5()
+    public function returns_buzz_for_multiple_of_5()
     {
         $fizzBuzz = new FizzBuzz();
 
@@ -31,7 +31,7 @@ class FizzBuzzTest extends TestCase
     /**
      * @test
      */
-    public function convert_buzz_for_mod3_and_mod5()
+    public function returns_fizzbuzz_for_multiple_of_3_and_multiple_of_5()
     {
         $fizzBuzz = new FizzBuzz();
 
