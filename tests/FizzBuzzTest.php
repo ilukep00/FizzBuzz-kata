@@ -6,6 +6,14 @@ use PHPUnit\Framework\TestCase;
 use Deg540\PHPTestingBoilerplate\FizzBuzz;
 class FizzBuzzTest extends TestCase
 {
+    private FizzBuzz $fizzBuzz;
+
+    protected function setUp():void
+    {
+        parent::setUp();
+        $this-> fizzBuzz = new FizzBuzz();
+    }
+
     /**
      * @test
      */
@@ -31,7 +39,7 @@ class FizzBuzzTest extends TestCase
     /**
      * @test
      */
-    public function returns_fizzbuzz_for_multiple_of_3_and_multiple_of_5()
+    public function returns_fizzbuzz_for_multiple_of_15()
     {
         $fizzBuzz = new FizzBuzz();
 
@@ -39,8 +47,4 @@ class FizzBuzzTest extends TestCase
 
         $this->assertEquals('fizzbuzz',$convertedNumber);
     }
-
-
-
-
 }

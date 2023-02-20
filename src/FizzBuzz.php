@@ -6,18 +6,16 @@ class FizzBuzz
 {
     function convert(int $numberToConvert):string
     {
-        if($numberToConvert % 3 == 0 && $numberToConvert % 5 != 0){
-            return "fizz";
-        }
-        else if($numberToConvert % 3 != 0 && $numberToConvert % 5 == 0){
-            return "buzz";
-        }
-        else if($numberToConvert % 3 == 0 && $numberToConvert % 5 == 0){
+        if($numberToConvert % 15 == 0){
             return "fizzbuzz";
         }
-        else{
-            return "".$numberToConvert."";
+        else if($numberToConvert % 3 == 0 ){
+            return "fizz";
         }
+        else if($numberToConvert % 5 == 0){
+            return "buzz";
+        }
+        return strval($numberToConvert);
     }
 
 
